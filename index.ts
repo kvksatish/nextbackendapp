@@ -1,8 +1,8 @@
 import express, { Request, Response } from 'express';
 import bcrypt from 'bcrypt';
-import UserModel from '../Models/User';
+import UserModel from './Models/User';
 import jwt from 'jsonwebtoken';
-import { connection } from '../Config/db';
+import { connection } from './Config/db';
 import dotenv from 'dotenv';
 import cors from 'cors'
 

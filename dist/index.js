@@ -14,9 +14,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const bcrypt_1 = __importDefault(require("bcrypt"));
-const User_1 = __importDefault(require("../Models/User"));
+const User_1 = __importDefault(require("./Models/User"));
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
-const db_1 = require("../Config/db");
+const db_1 = require("./Config/db");
 const dotenv_1 = __importDefault(require("dotenv"));
 const cors_1 = __importDefault(require("cors"));
 dotenv_1.default.config();
@@ -107,4 +107,4 @@ app.listen(7500, () => __awaiter(void 0, void 0, void 0, function* () {
     console.log(process.env.NAME);
     //console.log(process.env.MONGO_URL)
 }));
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=index.js.map
